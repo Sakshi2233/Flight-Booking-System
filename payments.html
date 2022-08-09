@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <title>Payment</title>
+    <link rel="stylesheet" href="styles/payment.css">
+    <style class="style">
+        body{
+            background-image: url('img6.jfif');
+            background-size: 100% 100%;
+        }
+        </style>
+    <body>
+        <h1 class="heading">Star Travel</h1>
+        <div class="box">
+            <a class="sub-heading" href="home.html"style="color: aliceblue">Home</a>
+            <a class="sub-heading" href="signup.html"style="color: aliceblue">Signup</a>
+            <a class="sub-heading" href="login.html"style="color: aliceblue">Login</a>
+            <a class="sub-heading" href="flight details.html"style="color: aliceblue">Flights</a>
+            <a class="sub-heading" href="offers.html"style="color: aliceblue">Offers</a>
+            <a class="sub-heading" href="payments.html"style="color: aliceblue">Payments</a>
+        </div>
+        <div class="row">
+            <div class="column">
+        <form action="/action_page.php">      
+            <div class="container1">
+              
+                <h3>Fare Summary</h3>
+                <table>
+                    <tr>
+                        <td class="bf">Base Fare</td>
+                    </tr>
+                    <tr>
+                        <td class="a">
+                             Rs. 1,890. 00
+                        </td>
+                        <td class="be">
+                            Rs.1,890.00
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <br><td class="bf">Taxes & Fee</td>
+                    </tr>
+                    <tr>
+                        <td class="a">
+                            Taxes & Fee
+                        </td>
+                        <td class="b">
+                            Rs.601.00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="a">
+                            Discount
+                        </td>
+                        <td class="b">
+                            Rs.-700.00
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="q">
+                            Total Amount
+                        </td>
+                        <td class="qa">
+                            Rs.1,791.00
+                        </td>
+                    </tr>
+                </table>
+              <hr>
+            </div>
+        </form>
+        </div>
+            <div class="column">
+        <form class="fo" action="completed.html">
+            <table class="container">
+                <h3 class="titl">Payment</h3>
+                <div class="details">
+                    <label for="fname">Accepted Cards</label>
+                        <img src="cardshm.jpg" width="200" height="30" class="crd">
+                    <label for="cname">Name on Card</label>
+                    <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                    <div>
+                    <label for="ccnum">Credit card number</label>
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" pattern="[0-9]+" maxlength="16">
+                        <script>
+                            myInput.oninput = function () 
+                        {
+                            if (this.value.length > 17) 
+                            {
+                                this.value = this.value.slice(0,17); 
+                            }
+                        }
+                        </script>
+                    </div> 
+                </div>
+                <div class="details">
+                    <label for="expmonth">Exp Month</label>
+                    <select name="expmonth" id="expmonth" class="month">
+                        <option value="Jan">01</option>
+                        <option value="Feb">02</option>
+                        <option value="Mar">03</option>
+                        <option value="Apr">04</option>
+                        <option value="May">05</option>
+                        <option value="Jun">06</option>
+                        <option value="Jul">07</option>
+                        <option value="Aug">08</option>
+                        <option value="Sep">09</option>
+                        <option value="Oct">10</option>
+                        <option value="Nov">11</option>
+                        <option value="Dec">12</option>                  
+                </select>
+                </div>
+                <div class="details">
+                    <label for="expyear">Exp Year</label>
+                        <div class="yr"></div>
+                        <select name="expyear" id="expyear" class="month">
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                        </select>
+                </div>
+                <div class="details">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="352" pattern="[0-9]+" maxlength="3">
+                    <script>
+                        myInput.oninput = function () 
+                        {
+                            if (this.value.length > 4) 
+                            {
+                                this.value = this.value.slice(0,4); 
+                            }
+                        }
+                    </script>
+                </div>
+            </table>
+            <div class="butt">
+                
+                 <input type="submit" value="Continue to checkout" class="btn" >
+            </div>
+            
+            </form>
+          </div>
+       </div>
+        <div  class="create">
+                <table>
+                    <td class="foot">
+                        Connect us with<br><br>
+                        <img src="fb.jpg" width="30" height="30">
+                        <img src="insta.jpg" width="30" height="30">
+                        <img src="twitter.jpg" width="30" height="30">
+                    </td>
+                    <td class="foot1">
+                        <img src="cardshm.jpg" width="200" height="30">
+                    </td>
+                    <td class="foot2">
+                        Star Travel<br>
+                        020-1422-2679<br>
+                        support@startravel.in<br>
+                    </td>
+                </table>
+            </div>
+                <div class="footer">
+                    <img src="copyright.jpg" width="15" height="15">
+                    Copyright 2020
+                </div>
+    </body>
+</html>
+

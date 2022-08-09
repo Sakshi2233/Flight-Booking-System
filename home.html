@@ -1,0 +1,205 @@
+<! doctype html>
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="styles/home.css">
+    </head>
+    <style>
+        body{
+              background-image: url('img6.jfif');
+            background-size: 100% 100%;
+        }
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </style>
+    <body>
+        
+        <h1 class="heading">Star Travel</h1>
+        <div class="box">
+        <a class="sub-heading" href="home.html" style="color: aliceblue">Home&nbsp; </a>
+        <a class="sub-heading" href="signup.html"style="color: aliceblue">Signup&nbsp; </a>
+        <a class="sub-heading" href="login.html"style="color: aliceblue">Login&nbsp; </a>
+        <a class="sub-heading" href="flight details.html"style="color: aliceblue">Flights&nbsp; </a>
+        <a class="sub-heading" href="offers.html"style="color: aliceblue">Offers&nbsp; </a>
+        <a class="sub-heading" href="payments.html"style="color: aliceblue">Payments&nbsp; </a>
+        </div>
+        <form action="flight details.html">
+        <div class="b" >
+         <table class="button1" cellpadding="10">
+                <tr>
+                    <td>
+                        <input type="radio" name="Trip" id="Round Trip value =" Round Trip required>
+                        <label for="Round Trip">Round Trip</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="Trip" id="One Way value="One Way required>
+                        <label for="One Way">One Way</label>
+                    </td>
+               </tr>
+             <tr>
+                 
+             </tr>
+            </table>
+            <table class="table">
+                <form action="flight.html" cellspacing="0">
+                    <tr>
+                        <td>
+                            <h4 class="t">From</h4>
+                            <input type="text" name="from" placeholder="From" id="from" required>
+                        </td>
+                        <td>
+                            <h4 class="t">To</h4>
+                            <input type="text" name="to" placeholder="To" id="to" required>
+                        </td>
+                        <td>
+                            <h4 class="t">Departure</h4>
+                            <input type="text" name="Departure" placeholder="Departure Date" pattern="([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))" title="yyyy-mm--dd" required>
+                            
+                        </td>
+                        <td>
+                            <h4 class="t">Return</h4>
+                            <input type="text" name="Return Date" placeholder="Return Date" pattern="([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))" title="yyyy-mm--dd" required>
+                        </td>
+                        <td>
+                            <h4 class="t">Class</h4>
+                            <select id="class" name="class">
+                                <option>Economy</option>
+                                <option>First Class</option>
+                                <option>Business Class</option>
+                                <option>Premium Economy</option>
+                            </select>
+                       </td>
+                    </tr>
+                </form>
+            </table>  
+            <input class="button" value="Search" type="submit" /> 
+        </div>
+        </form>
+            
+        <div>
+            <h4 class="a" >Amazing Offers !!</h4>
+        <table class="center" cellspacing=15px> 
+            <tr>
+            <td class="td"><br>
+                Paytm CashBack Offer<br><br>
+                <img src="paytm.png" style="width: 200px; height: 200px; "><br>
+                Pay via Paytm wallet and get Paytm <br>                 
+                CashBack of 10% upto maximum of ₹500.
+            </td>
+            <td class="td"><br>
+                Flat 20% cashback with inflightfeed!<br><br>
+                <img src="meal.jpg" style="width: 200px; height: 200px; "><br>
+                Buy your favourite snack and beverage on <br>
+                board to avail the offer. T&C apply. 
+            </td>
+            <td class="td"><br>
+                Dhani<br><br>
+                <img src="dhani.png" style="width: 200px; height:200px;"><br>
+                Enjoy 10% cashback up to ₹500 on payments<br>
+                     made using Dhani OneFreedom Card..
+            </td>
+            </tr>
+        </table>
+        </div>
+        <div class="next">
+            <a class="bu" href="offers.html"style="color: aliceblue">More Offers</a>
+        </div><br>
+        <br>
+        
+        <h3 class="faq">Flight Booking FAQs</h3>
+        <button class="accordion">How can I book an online air ticket and what are the advantages of online air ticket booking?</button>
+        
+        <div class="panel">
+        <p>You can book your online flight ticket via Star Travel in by following simple steps. Advantage of online flight booking is that you can compare the prices of multiple airlines and choose the most affordable one. You can also use filters which can improve the flight searches.
+
+        Apart from that if you are booking a flight ticket via a third party online portal like Star Travel, you get exclusive offers. You can avail the coupon and promo codes while flight booking which makes your air journey cheaper.</p>
+</div>
+
+<button class="accordion">Is there any best day in a week for flight ticket booking?</button>
+<div class="panel">
+  <p>It is a popular belief that if you book your air ticket on wednesday, you will get a cheap deal. But Tuesday is no longer an option to book cheap air tickets in a week.
+
+Nowadays Sunday is the best option for booking a cheap ticket before 30 days of departure, because most of the business travelers have started booking their air ticket during the week.</p>
+</div>
+
+<button class="accordion">What are the air travel guidelines during Covid-19 at the airport?</button>
+<div class="panel">
+  <p>The air travel guidelines during Covid-19 pandemic at the airport issued by Government of Ministry and Health are.<br>
+
+» The traveler must go through thermal screening.<br>
+
+» All passengers must have an Arogya Setu App in their smartphone, except children below 14 year of age.<br>
+
+» Traveler must wear mask and gloves.<br>
+
+» All passengers will have to arrive at the airport two hours prior departure.<br>
+
+» Only 1 check-in baggage and 1 hand baggage are allowed per person<br>
+
+» Print baggage tags and affix on the bag.<br>
+
+» Passengers need to follow physical distance.<br>
+
+» No trolleys are allowed at the departure and arrival section. For special cases if trolleys are used it must be disinfected.
+<br>
+» Airport operators must sanitize the baggage before entry.<br>
+
+» Baggage must be self-drop 1 hour prior departure.<br>
+
+» To avoid crowds all entry gates will be opened by the airport.</p>
+</div>
+        
+        <button class="accordion">Can I get a cheap flight ticket at last minute booking?</button>
+<div class="panel">
+  <p>Often we used to think that booking a last minute flight can be expensive but this is not always true. You can get a cheap air ticket at the last minute, it will depend on the demand of the air ticket, route and availability. Price of tickets fluctuates on a daily basis. So, you can get a cheap flight at the last minute or get an expensive one as well. </p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+        
+        
+        
+        
+        
+        
+        
+            
+        <div  class="create">
+                <table>
+                    <td class="foot">
+                        Connect us with<br><br>
+                        <img src="fb.jpg" width="30" height="30">
+                        <img src="insta.jpg" width="30" height="30">
+                        <img src="twitter.jpg" width="30" height="30">
+                    </td>
+                    <td class="foot1">
+                        <img src="cardshm.jpg" width="200" height="30">
+                    </td>
+                    <td class="foot2">
+                        Star Travel<br>
+                        020-1422-2679<br>
+                        support@startravel.in<br>
+                    </td>
+                </table>
+            </div>
+                <div class="footer">
+                    <img src="copyright.jpg" width="15" height="15">
+                    Copyright 2020
+                </div>
+    </body>
+        
+    </body>
+</html>

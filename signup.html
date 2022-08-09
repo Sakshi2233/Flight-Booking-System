@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Signup</title>
+        <link rel="stylesheet" href="styles/signup.css">
+        <style class="style">
+        body{
+            background-image: url('img6.jfif');
+            background-size: 100% 100%;
+        }
+        </style>
+    </head>
+    <body>
+        <h1 class="heading">Star Travel</h1>
+        <div class="box">
+        <a class="sub-heading" href="home.html"style="color: aliceblue">Home</a>
+        <a class="sub-heading" href="signup.html"style="color: aliceblue">Signup</a>
+        <a class="sub-heading" href="login.html"style="color: aliceblue">Login</a>
+        <a class="sub-heading" href="flight details.html"style="color: aliceblue">Flights</a>
+        <a class="sub-heading" href="offers.html"style="color: aliceblue">Offers</a>
+        <a class="sub-heading" href="payments.html"style="color: aliceblue">Payments</a>
+        </div>
+        <h2 class="sign">Signup</h2>
+        <form action="login.html">
+        <table cellpadding="10" class="table">
+            <tr>
+                <td class="text">
+                    Title<br>
+                    <input type="radio" name="title" id="mister value="mister required>
+                    <label for="mister">Mr.</label>
+                    <input type="radio" name="title" id="mistress value="mistress>
+                    <label for="mistress">Mrs.</label>
+                    <input type="radio" name="title" id="mistress value="mistress>
+                    <label for="mistress">Ms.</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="text">
+                    <label for="first name">First Name</label><br>
+                    <input type="text" name="first name" id="first name" required>
+                </td>
+                <td class="text">
+                    <label for="Last name">Last Name</label><br>       
+                    <input type="text" name="last name" id="last name" required>     
+                </td>
+            </tr>
+            <tr>
+                <td class="text">
+                    <label for="email">Email</label><br>
+                    <input type="text" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required title="xxxx@yyyy.zzz format">
+                </td>
+                <td class="text">
+                    <label for="mobile number">Mobile Number</label><br>
+                    <input type="text" name="mobile number" id="Mobile Number" pattern="[0-9]{10}">
+                </td>
+            </tr>
+            <tr>
+                <td class="text">
+                    <label for="password">Password</label><br>
+                    <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="A number, 1 upper acse, 1 lower case with 8 or more characters" required>
+                </td>
+                <td class="text">
+                    <label for="Confirm Password">Confirm Password</label><br>
+                    <input type="password" name="confirmpassword" id="confirmpassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="A number, 1 upper acse, 1 lower case with 8 or more characters" required>
+                </td>
+            </tr>
+        </table>
+            <input class="reg" type="submit" value="Register">
+        </form>
+        <div  class="create">
+                <table>
+                    <td class="foot">
+                        Connect us with<br><br>
+                        <img src="fb.jpg" width="30" height="30">
+                        <img src="insta.jpg" width="30" height="30">
+                        <img src="twitter.jpg" width="30" height="30">
+                    </td>
+                    <td class="foot1">
+                        <img src="cardshm.jpg" width="200" height="30">
+                    </td>
+                    <td class="foot2">
+                        Star Travel<br>
+                        020-1422-2679<br>
+                        support@startravel.in<br>
+                    </td>
+                </table>
+            </div>
+                <div class="footer">
+                    <img src="copyright.jpg" width="15" height="15">
+                    Copyright 2020
+                </div>
+    </body>
+</html>

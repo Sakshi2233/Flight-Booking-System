@@ -1,0 +1,196 @@
+<! doctype html>
+<html>
+    <head>
+        <title> Flights</title>
+        <link rel="stylesheet" href="styles/flight_details.css">
+    </head>
+    <style>
+        body{
+            background-image: url('img6.jfif');
+            background-size: 100% 100%;
+        }
+    </style>
+    <body>
+        <h1 class="heading">Star Travel</h1>
+        <div class="box">
+        <a class="sub-heading" href="home.html"style="color: aliceblue">Home</a>
+        <a class="sub-heading" href="signup.html"style="color: aliceblue">Signup</a>
+        <a class="sub-heading" href="login.html"style="color: aliceblue">Login</a>
+        <a class="sub-heading" href="flight details.html"style="color: aliceblue">Flights</a>
+        <a class="sub-heading" href="offers.html"style="color: aliceblue">Offers</a>
+        <a class="sub-heading" href="payments.html"style="color: aliceblue">Payments</a>
+        </div>
+        <div class="box1">   
+        <h3 class="title">Book Domestic Flights</h3>
+            <table class="button1" cellpadding="10">
+                <tr>
+                    <td>
+                        <input type="radio" name="Trip" id="Round Trip value =" Round Trip required>
+                        <label for="Round Trip">Round Trip</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="Trip" id="One Way value="One Way required>
+                        <label for="One Way">One Way</label>
+                    </td>
+               </tr>
+            </table>
+            <table class="table">
+                <form action="flight.html" cellspacing="0">
+                    <tr>
+                        <td>
+                            <h4>From</h4>
+                            <input type="text" name="from" placeholder="From" id="from" required>
+                        </td>
+                        <td>
+                            <h4>To</h4>
+                            <input type="text" name="to" placeholder="To" id="to" required>
+                        </td>
+                        <td>
+                            <h4>Departure</h4>
+                            <input type="text" name="Departure" placeholder="Departure Date" pattern="([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))" title="yyyy-mm--dd" required>
+                            
+                        </td>
+                        <td>
+                            <h4>Return</h4>
+                            <input type="text" name="Return Date" placeholder="Return Date" pattern="([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))" title="yyyy-mm--dd" required>
+                        </td>
+                        <td>
+                            <h4>Class</h4>
+                            <select id="class" name="class">
+                                <option>Economy</option>
+                                <option>First Class</option>
+                                <option>Business Class</option>
+                                <option>Premium Economy</option>
+                            </select>
+                       </td>
+                    </tr>
+                </form>
+            </table>  
+            <input class="button" value="Search" type="submit" />  
+        <h2 class="details">Find Deal on Flight Tickets</h2>
+        <label class="label">Flying from</label>
+            <select id="State" name="state">
+            <option>Maharashtra</option>
+            <option>Jammu and Kashmir</option>
+            <option>Gujrat</option>
+            <option>Jharkhand</option>
+            <option>Tamil Nadu</option>
+            <option>Uttarakhand</option>
+            <option>Uttar Pradesh</option>
+            <option>Orissa</option>
+            <option>Mizoram</option>
+            <option>Bihar</option>
+            <option>Chattisgarh</option>
+        </select>
+        
+        <label class="label">Select from City:</label>
+        
+            <select  id="City" name="City">
+            <option>Akola</option>
+            <option>Kolhapur</option>
+            <option>Nashik</option>
+            <option>Solapur</option>
+            <option>Ratnagiti</option>
+            <option>Nanded</option>
+            <option>Jammu</option>
+            <option>Aizawl</option>
+            <option>Bhubaneshwar</option>
+            <option>Madurai</option>
+            <option>Dehradun</option>
+            <option>Surat</option>
+            <option>Ranchi</option>
+            <option>Meerut</option>
+            <option>Jhansi</option>
+            <option>Bhavnagar</option>
+        </select>
+        
+        <table class="table1" border="0" cellpadding="8" cellspacing="2">
+            <form action="AkolaNashik.html">
+            <tr class="box2">
+                <td>Akola to Nashik</td>
+                <td class="option">From Rs.2532 </td>
+                <td class="option1">
+                    <input class="but" type="submit" name="search" value="Search" href="AkolaNashik.html">  
+                </td>
+            </tr>
+                 </form>
+            <form action="NashikDeheradun.html">
+            <tr class="box2">
+                <td>Nashik to Dehradun</td>
+                <td class="option">From Rs.1592 </td>
+                <td class="option1">
+                    <input class="but" type="submit" name="search" value="Search">
+                </td>
+            </tr> 
+            </form>
+            <form action="BhubanMadur.html">
+            <tr class="box2">
+                <td>Bhubaneshwar to Madurai</td>
+                <td class="option">From Rs.1864 </td>
+                <td class="option1">
+                    <input class="but" type="submit" name="search" value="Search">
+                </td>
+            </tr> 
+            </form>
+            <form action="suratAiza.html">
+            <tr class="box2">
+                <td>Surat to Aizawl</td>
+                <td class="option">From Rs.1450 </td>
+                <td class="option1">
+                    <input class="but" type="submit" name="search" value="Search">
+                </td>
+            </tr>
+                </form>
+            <form action="solaJammu.html">
+            <tr class="box2">
+                <td>Solapur to Jammu</td>
+                <td class="option">From Rs.1270 </td>
+                <td class="option1">
+                    <input class="but" type="submit" name="search" value="Search">
+                </td>
+            </tr>
+                </form>
+            <form action="akolajanshi.html">
+            <tr class="box2">
+                <td>Akola to Jhansi</td>
+                <td class="option">From Rs.2461 </td>
+                <td class="option1">
+                    <input class="but" type="submit" name="search" value="Search">
+                </td> 
+            </tr>
+                </form>
+        </table>
+        </div>
+        <br>
+        <br>
+        <div class="routes">
+            <h3 class="top">Top Domestic Routes</h3>
+            <h3 class="route1">
+                Mumbai To Delhi | Mumbai To Goa | Mumbai To Jaipur | Mumbai To Chandigarh | Mumbai To Chennai | Mumbai To Kolkata | Mumbai To Bangalore | Mumbai To Hyderabad | Delhi To Mumbai | Delhi To Goa | Delhi To Jaipur | Delhi To Chandigarh | Delhi To Chennai | Delhi To Kolkata | Delhi To Bangalore | Delhi To Hyderabad | Goa To Delhi | Goa To Mumbai | Goa To Jaipur | Goa To Chandigarh | Goa To Chennai | Goa To Kolkata | Goa To Bangalore | Goa To Hyderabad | Jaipur To Delhi | Jaipur To Mumbai | Jaipur To Goa | Jaipur To Chandigarh | Jaipur To Chennai | Jaipur To Kolkata | Jaipur To Bangalore | Jaipur To Hyderabad | Chandigarh To Delhi | Chandigarh To Mumbai | Chandigarh To Goa | Chandigarh To Jaipur | Chandigarh To Chennai | Chandigarh To Kolkata | Chandigarh To Bangalore | Chandigarh To Hyderabad | Chennai To Delhi | Chennai To Mumbai | Chennai To Goa | Chennai To Jaipur | Chennai To Chandigarh | Chennai To Kolkata | Chennai To Bangalore | Chennai To Hyderabad | Kolkata To Delhi | Kolkata To Mumbai </h3>
+        </div><br>
+        
+            <div  class="create">
+                <table>
+                    <td class="foot">
+                        Connect us with<br><br>
+                        <img src="fb.jpg" width="30" height="30">
+                        <img src="insta.jpg" width="30" height="30">
+                        <img src="twitter.jpg" width="30" height="30">
+                    </td>
+                    <td class="foot1">
+                        <img src="cardshm.jpg" width="200" height="30">
+                    </td>
+                    <td class="foot2">
+                        Star Travel<br>
+                        020-1422-2679<br>
+                        support@startravel.in<br>
+                    </td>
+                </table>
+            </div>
+                <div class="footer">
+                    <img src="copyright.jpg" width="15" height="15">
+                    Copyright 2020
+                </div>
+    </body>
+</html>
+    
